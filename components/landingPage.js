@@ -8,11 +8,8 @@ function LandingPage() {
     const bg = '/bg.jpg'
   return (
     <div className="m-0 relative">
-      {/* Hero */}
-      <div className="h-screen bg-orange-50 flex items-center justify-center">
-        <div>
-          {/* Navbar */}
-          <div className=" absolute top-0 left-0 w-full bg-white shadow-sm flex items-center justify-between px-4 py-1">
+        {/* Navbar */}
+        <div className=" sticky top-0 left-0 w-full bg-white shadow-sm flex items-center justify-between px-4 py-1">
             <Logo />
             <ul className="space-x-4 text-sm mx-3 hidden text-orange-500 ">
               <li>
@@ -35,6 +32,10 @@ function LandingPage() {
               </li>
             </ul>
           </div>
+      {/* Hero */}
+      <div className="h-screen bg-white flex items-center justify-center">
+        <div>
+          
           <div 
         //   className="flex lg:flex-row"
           >
@@ -43,7 +44,7 @@ function LandingPage() {
               <div className="text-lg p-4 text-orange-500 font-semibold">
                 Build your skill to advance your career path
               </div>
-              <div className="text-md px-4 text-orange-500 font-thin">
+              <div className="text-md px-4 text-orange-500 font-medium">
                 Learn IT Skills from professional instrustors and earn MIT
                 certificate
               </div>
