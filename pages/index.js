@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import LandingPage from '../components/landingPage'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className='p-4 bg-blue-500'>
-      Quartz
-    </div>
+    <LandingPage />
     )
 }
