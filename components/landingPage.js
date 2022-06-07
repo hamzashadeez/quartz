@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Logo from "./logo";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { BsFillTelephoneInboundFill } from "react-icons/bs";
+
+const sendWhatsAppMessage = ()=>{}
+const copyToClipboard = ()=>{}
 
 function LandingPage() {
   const bg = "/bg.jpg";
@@ -34,15 +39,13 @@ function LandingPage() {
       {/* Hero */}
       <div className="h-screen bg-white flex items-center justify-center">
         <div>
-          <div
-          //   className="flex lg:flex-row"
-          >
+          <div>
             <div>
               {/* notes */}
-              <div className="text-lg p-4 text-orange-500 font-semibold">
+              <div className="text-lg p-4 text-gray-800 font-semibold">
                 Build your skill to advance your career path
               </div>
-              <div className="text-md px-4 text-orange-500 font-medium">
+              <div className="text-md px-4 text-gray-500 font-medium">
                 Learn IT Skills from professional instrustors and earn MIT
                 certificate
               </div>
@@ -77,6 +80,18 @@ function LandingPage() {
       {/* Pricing */}
 
       {/* Contact */}
+      <div className="p-6 flex flex-col items-center justify-center" id="contact">
+        <h4 className=" text-orange-500 mb-3 text-center">Contact</h4>
+        
+        <button onClick={()=>copyToClipboard()} className="bg-gray-100 px-3 py-1 mb-4 rounded-md text-gray-800 font-medium flex items-center justify-between">
+          <BsFillTelephoneInboundFill size={17} className='my-0 mr-2 w-5'/>
+          +2348109593515
+        </button>
+        <button onClick={()=>sendWhatsAppMessage()} className="bg-green-400 px-3 py-1 rounded-md text-gray-800 font-medium flex items-center justify-between">
+          <AiOutlineWhatsApp size={17} className='my-0 mr-2 w-5'/>
+          Talk on WhatsApp
+        </button>
+      </div>
 
       {/* Footer */}
       <div className="bg-gray-800 p-4 text-gray-200 text-center">
@@ -101,14 +116,11 @@ function LandingPage() {
         <div>
           <h4 className=" text-orange-500 mb-3 mt-8">Contact</h4>
           <ul className="space-y-3 text-sm mx-3 ">
+            <li>+234 810 959 3515</li>
+            <li>Quartz@gmail.com</li>
             <li>
-             +234 810 959 3515
-            </li>
-            <li>
-              Quartz@gmail.com
-            </li>
-            <li>
-            No 22 Hospital road Tudun Wada, Zaria,<br></br> Kaduna State, Nigeria
+              No 22 Hospital road Tudun Wada, Zaria,
+              <br /> Kaduna State, Nigeria
             </li>
           </ul>
         </div>
