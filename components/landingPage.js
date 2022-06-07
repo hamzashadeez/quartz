@@ -4,9 +4,15 @@ import React from "react";
 import Logo from "./logo";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";
+import Courses from "./Courses";
 
-const sendWhatsAppMessage = ()=>{}
-const copyToClipboard = ()=>{}
+const sendWhatsAppMessage = () => {
+  document.location.href = "https://wa.me/+2348109593515";
+};
+const copyToClipboard = () => {
+  navigator.clipboard.writeText("+2348109593515");
+  alert("Phone Number Copied!");
+};
 
 function LandingPage() {
   const bg = "/bg.jpg";
@@ -49,7 +55,7 @@ function LandingPage() {
                 Learn IT Skills from professional instrustors and earn MIT
                 certificate
               </div>
-              <button className="bg-orange-500 w-auto m-4 text-white rounded-sm px-4 py-2">
+              <button className="bg-orange-500 w-auto m-4 text-white rounded-md px-5 py-2">
                 <Link href="#about">Get Started</Link>
               </button>
             </div>
@@ -62,6 +68,12 @@ function LandingPage() {
       </div>
 
       {/* Courses */}
+      <div className="bg-white">
+        <div className="text-orange-500 text-center uppercase mb-2">
+          Courses
+        </div>
+        <Courses />
+      </div>
 
       {/* About */}
       <div id="about" className="p-4 bg-orange-50 mb-2">
@@ -80,15 +92,24 @@ function LandingPage() {
       {/* Pricing */}
 
       {/* Contact */}
-      <div className="p-6 flex flex-col items-center justify-center" id="contact">
-        <h4 className=" text-orange-500 mb-3 text-center">Contact</h4>
-        
-        <button onClick={()=>copyToClipboard()} className="bg-gray-100 px-3 py-1 mb-4 rounded-md text-gray-800 font-medium flex items-center justify-between">
-          <BsFillTelephoneInboundFill size={17} className='my-0 mr-2 w-5'/>
+      <div
+        className="p-6 flex flex-col items-center justify-center"
+        id="contact"
+      >
+        <h4 className=" text-orange-500 mb-3 text-center uppercase">Contact</h4>
+
+        <button
+          onClick={() => copyToClipboard()}
+          className="bg-gray-100 px-3 py-1 mb-4 rounded-md text-gray-800 font-medium flex items-center justify-between"
+        >
+          <BsFillTelephoneInboundFill size={17} className="my-0 mr-2 w-5" />
           +2348109593515
         </button>
-        <button onClick={()=>sendWhatsAppMessage()} className="bg-green-400 px-3 py-1 rounded-md text-gray-800 font-medium flex items-center justify-between">
-          <AiOutlineWhatsApp size={17} className='my-0 mr-2 w-5'/>
+        <button
+          onClick={() => sendWhatsAppMessage()}
+          className="bg-green-400 px-3 py-1 rounded-md text-gray-800 font-medium flex items-center justify-between"
+        >
+          <AiOutlineWhatsApp size={17} className="my-0 mr-2 w-5" />
           Talk on WhatsApp
         </button>
       </div>
