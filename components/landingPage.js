@@ -5,6 +5,7 @@ import Logo from "./logo";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import Courses from "./Courses";
+import Services from "./Services";
 
 const sendWhatsAppMessage = () => {
   document.location.href = "https://wa.me/+2348109593515";
@@ -19,7 +20,7 @@ function LandingPage() {
   return (
     <div className="m-0 relative">
       {/* Navbar */}
-      <div className=" sticky top-0 left-0 w-full bg-white shadow-sm flex items-center justify-between px-4 py-1">
+      <div className=" sticky top-0 left-0 w-full bg-white shadow-md flex items-center justify-between px-4 py-1 z-20">
         <Logo />
         <ul className="space-x-4 text-sm mx-3 hidden text-orange-500 ">
           <li>
@@ -75,13 +76,21 @@ function LandingPage() {
         <Courses />
       </div>
 
+      {/* Services */}
+      <div className="p-4 bg-white flex flex-col">
+      <div className="text-orange-500 text-center uppercase mb-2">
+          Services
+        </div>
+        <Services />
+      </div>
+
       {/* About */}
       <div id="about" className="p-4 bg-orange-50 mb-2">
         <div className="text-orange-500 text-center uppercase mb-2">
           About Us
         </div>
         <div className="text-gray-700">
-          Quartz Engineering and IT Services has been running for dedicates, we
+          Quartz Engineering and IT Services has been running for decades, we
           provide Consultancy Services and train thousand of students different
           Computer Science courses.{" "}
         </div>
@@ -138,7 +147,7 @@ function LandingPage() {
           <h4 className=" text-orange-500 mb-3 mt-8">Contact</h4>
           <ul className="space-y-3 text-sm mx-3 ">
             <li>+234 810 959 3515</li>
-            <li>Quartz@gmail.com</li>
+            <li>Lynxalpha4@gmail.com</li>
             <li>
               No 22 Hospital road Tudun Wada, Zaria,
               <br /> Kaduna State, Nigeria
