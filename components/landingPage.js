@@ -53,8 +53,8 @@ function LandingPage() {
                 Build your skill to advance your career path
               </div>
               <div className="text-md px-4 text-gray-500 font-medium">
-                Learn IT Skills from professional instrustors and earn MIT
-                certificate
+                Learn IT Skills from professional instrustors and earn
+                certificates
               </div>
               <button className="bg-orange-500 w-auto m-4 text-white rounded-md px-5 py-2">
                 <Link href="#about">Get Started</Link>
@@ -78,7 +78,7 @@ function LandingPage() {
 
       {/* Services */}
       <div className="p-4 bg-white flex flex-col">
-      <div className="text-orange-500 text-center uppercase mb-2">
+        <div className="text-orange-500 text-center uppercase mb-2">
           Services
         </div>
         <Services />
@@ -91,7 +91,7 @@ function LandingPage() {
         </div>
         <div className="text-gray-700">
           Quartz Engineering and IT Services has been running for decades, we
-          provide Consultancy Services and train thousand of students different
+          provide Consultancy Services and train thousands of students different
           Computer Science courses.{" "}
         </div>
       </div>
@@ -123,6 +123,33 @@ function LandingPage() {
         </button>
       </div>
 
+      {/* How it works */}
+      <div className="p-6 flex flex-col items-center bg-blue-50">
+        <div className=" text-orange-500 mb-3 uppercase">certification</div>
+        <div className="text-gray-800">
+          We offer special training to our students, advanced enough to let them
+          persuare their dreams.
+        </div>
+        <div className="text-gray-800 mt-1">
+          For students that want to be certified by those giant institutions
+          around the world, need to apply for that after the training.{" "}
+        </div>
+      </div>
+
+      {/* Consultancy Service */}
+      <div className="p-6 flex flex-col items-center bg-slate-50">
+        <div className=" text-orange-500 mb-3 uppercase">
+          Consultancy Service
+        </div>
+        <div className="text-gray-800">
+          We have a dedicated team that build Mobile and Web Applications used
+          by thousands of users around the world.
+        </div>
+        <div className="text-gray-800 mt-1">
+         We are happy to build your software solution to your business or to make your idea come to live!
+        </div>
+      </div>
+
       {/* Footer */}
       <div className="bg-gray-800 p-4 text-gray-200 text-center">
         <div>
@@ -143,7 +170,7 @@ function LandingPage() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="mb-6">
           <h4 className=" text-orange-500 mb-3 mt-8">Contact</h4>
           <ul className="space-y-3 text-sm mx-3 ">
             <li>+234 810 959 3515</li>
