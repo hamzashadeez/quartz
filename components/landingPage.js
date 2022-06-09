@@ -146,7 +146,8 @@ function LandingPage() {
           by thousands of users around the world.
         </div>
         <div className="text-gray-800 mt-1">
-         We are happy to build your software solution to your business or to make your idea come to live!
+          We are happy to build your software solution to your business or to
+          make your ideas come to live!
         </div>
       </div>
 
