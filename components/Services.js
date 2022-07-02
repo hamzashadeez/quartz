@@ -1,3 +1,4 @@
+
 import React from "react";
 import { FaCode, FaMobileAlt } from "react-icons/fa";
 import { GiTeacher} from 'react-icons/gi'
@@ -12,6 +13,7 @@ function Services() {
           <FaCode size={45} />
         </div>
         <div className="text-orange-400 font-semibold">Web Design</div>
+       
       </div>
       {/*  */}
       <div className="p-4 border-2 w-full border-orange-50 shadow-sm mb-3 flex justify-center items-center flex-col space-y-3">
@@ -19,6 +21,7 @@ function Services() {
           <FaMobileAlt size={42} />
         </div>
         <div className="text-orange-400 font-semibold">App Development</div>
+        
       </div>
       {/*  */}
       <div className="p-4 border-2 w-full border-orange-50 shadow-sm mb-3 flex justify-center items-center flex-col space-y-3">
@@ -26,6 +29,7 @@ function Services() {
           <MdOutlineDraw size={42} />
         </div>
         <div className="text-orange-400 font-semibold">UI/UX Design</div>
+       
       </div>
       {/*  */}
       <div className="p-4 border-2 w-full border-orange-50 shadow-sm mb-3 flex justify-center items-center flex-col space-y-3">
@@ -33,6 +37,7 @@ function Services() {
           <GiTeacher size={45} />
         </div>
         <div className="text-orange-400 font-semibold">IT Training</div>
+       
       </div>
     </div>
   );

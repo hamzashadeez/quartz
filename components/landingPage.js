@@ -50,7 +50,7 @@ function LandingPage() {
             <div>
               {/* notes */}
               <div className="text-lg p-4 text-gray-800 font-semibold">
-                Build your skill to advance your career path
+                Build your skill to advance your career
               </div>
               <div className="text-md px-4 text-gray-500 font-medium">
                 Learn IT Skills from professional instrustors and earn
