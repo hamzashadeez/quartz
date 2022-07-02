@@ -54,7 +54,7 @@ function Courses() {
             <Stars />
             <div className="text-sm text-gray-700">(34 votes)</div>
           </div>
-          <Link href="/courses/web">
+          <Link href="/courses/design">
             <button className="text-sm bg-orange-500 px-3 py-2 rounded-md text-white hover:bg-orange-400">
               View Course Content
             </button>
